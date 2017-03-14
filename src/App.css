@@ -110,6 +110,18 @@ button {
   min-width: 100%;
 }
 
+
+.rate {
+  border: none;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  line-height: 20px;
+  margin: 2px;
+}
+.active {
+  background-color: #FFC107;
+}
 /* ================================= 
   Layout Styles
 ==================================== */
