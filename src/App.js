@@ -13,30 +13,13 @@ export default class App extends Component {
     };
   } 
 
-  //   componentDidMount() {
-  //    return axios.get("https://privatefly-interview-api.herokuapp.com/api/v1/aircraft/" )
-  //          .then(result => {
-  //             this.setState({ planes: result.data });
-  //             })   
-  // //   fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
-  // //     .then(response => response.json())
-  // //     .then(responseData => {
-  // //       this.setState({ planes: responseData.data });
-  // //     })
-
-  //     .catch(error => {
-  //       console.log('Error fetching and parsing data', error);
-  //     });
-  // }
 
       componentDidMount() {
         
       }
 
-// var query = "LY-ZAB";
-
         performSearch= (query) => {
-                   // return axios.get(https://privatefly-interview-api.herokuapp.com/api/v1/aircraft/search?q=${query}&limit=24")
+            
 
            return axios.get(`https://privatefly-interview-api.herokuapp.com/api/v1/aircraft/`+query )
            .then(result => {
@@ -58,7 +41,7 @@ export default class App extends Component {
 
 
  render() { 
-    console.log(this.state.gifs);
+    console.log(this.state.planes);
     return (
       <div>
         <div className="main-header">
