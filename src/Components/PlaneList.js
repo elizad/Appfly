@@ -11,7 +11,7 @@ const PlaneList = props => {
   
   const results = props.data;
   let planes;
-  if (results.length) {
+  if (results) {
     planes = results.map(plane => <Plane tail={plane.tail} key={plane.id} />);    
   } else {
     planes = <NoPlanes />

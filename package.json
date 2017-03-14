@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "es6-promise": "^4.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
@@ -87,5 +88,18 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizad/Appfly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizad/Appfly/issues"
+  },
+  "homepage": "https://github.com/elizad/Appfly#readme",
+  "description": ""
 }

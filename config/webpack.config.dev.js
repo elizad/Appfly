@@ -1,3 +1,5 @@
+require('es6-promise').polyfill();
+
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
