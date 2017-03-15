@@ -3,7 +3,7 @@
 
 $ npm init
 $ npm init -y
-$ install node
+$ npm install
 $ npm install --save react react-dom
 $ npm install --save-dev webpack webpack-dev-server
 $ npm install --save-dev babel-loader

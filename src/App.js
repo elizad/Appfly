@@ -32,22 +32,29 @@ export default class App extends Component {
           // })/search?q=${query}&limit=24
           .catch(error => {
             console.log('Error fetching and parsing data', error);
+            
+                    console.log(error.config);
+
+
+
           }); 
-
-         // console.log(query); 
-      }
-
+       
+}
 
 
 
  render() { 
     console.log(this.state.planes);
+
+
     return (
+
+      //to Do
       <div>
         <div className="main-header">
           <div className="inner">
             <h1 className="main-title">Plane Search</h1>
-            <SearchForm onSearch={this.performSearch} />      
+                   <SearchForm onSearch={this.performSearch} />      
           </div>   
         </div>    
         <div className="main-content">
@@ -55,8 +62,12 @@ export default class App extends Component {
             (this.state.loading)
              ? <p>Loading...</p>
              : <PlaneList data={this.state.planes} />
-          }          
-        </div>
+          }   
+
+
+             
+        </div>  
+        <div> all planes data </div>   
       </div>
     );
   }
