@@ -11,8 +11,9 @@ const PlaneList = props => {
   
   const results = props.data;
   let planes;
-  if (results) {
-    planes = results.map(plane => <Plane tail={plane.tail} key={plane.id} />);    
+  if (results.length){
+    planes = results.map(plane => <Plane tail={plane.tail} key={plane.id}
+                                               />);    
   } else {
     planes = <NoPlanes />
   }
@@ -28,4 +29,4 @@ const PlaneList = props => {
 
 export default PlaneList;
   // <Plane id={plane.id} key={plane.id} />
-   // <Plane tail = {plane.tail} key = {plane.id} />
+   //id={plane.id} key={plane.id} <Plane tail = {plane.tail} key = {plane.id} />

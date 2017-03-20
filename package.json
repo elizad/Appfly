@@ -1,5 +1,5 @@
 {
-  "name": "Appfly",
+  "name": "appfly",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -37,6 +37,7 @@
     "postcss-loader": "1.0.0",
     "promise": "7.1.1",
     "react-dev-utils": "^0.4.2",
+    "react-router": "^4.0.0",
     "recursive-readdir": "2.1.0",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
@@ -50,7 +51,8 @@
     "axios": "^0.15.3",
     "es6-promise": "^4.1.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
